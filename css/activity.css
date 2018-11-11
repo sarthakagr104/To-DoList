@@ -1,0 +1,74 @@
+#main-toolbar #activity-button {
+  background-image: url(../activity/activity-icon.svg);
+}
+body {
+	background: #04A1BF;
+	font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+	color: #ffffff;
+	text-transform: uppercase;
+	font-weight: 800;
+  text-align: center;
+}
+
+p {
+	font-weight: 600;
+}
+
+#first {
+	margin-top: 10px;
+	color: #FFCD5D;
+  text-align: center;
+}
+
+#second {
+	margin-top: 10px;
+  text-align: center;
+}
+
+#third {
+	color: #025F70;
+	margin-bottom: 30px;
+  text-align: center;
+}
+
+
+li {
+	list-style: none;
+	padding: 10px 20px;
+	color: #ffffff;
+  margin-right: 45px;
+  text-align: center;
+	text-transform: capitalize;
+	font-weight: 600;
+  align-self: center;
+}
+li:hover {
+	background: #76CFE0;
+  margin-right: 45px;
+}
+
+li > button {
+	font-weight: normal;
+  align : center;
+	background: none;
+	border: none;
+	float: right;
+	color: #025f70;
+	font-weight: 800;
+}
+
+input {
+	border-radius: 5px;
+	min-width: 97%;
+	padding: 10px;
+  text-align: center;
+	border: none;
+}
+
+
+.delete {
+	display: none;
+}

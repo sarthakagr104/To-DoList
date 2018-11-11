@@ -1,0 +1,6 @@
+[Activity]
+name = To-Do list
+activity_version = 1
+bundle_id = org.sugarlabs.To-doList
+exec = sugar-activity-web
+icon = activity-icon
