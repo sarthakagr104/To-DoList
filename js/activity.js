@@ -1,10 +1,15 @@
-define(["sugar-web/activity/activity"], function (activity) {
+define(["sugar-web/activity/activity", "sugar-web/env", "sugar-web/graphics/icon", "webL10n"], function (activity, env, icon, webL10n) {
 
 	// Manipulate the DOM only when it is ready.
 	requirejs(['domReady!'], function (doc) {
 
 		// Initialize the activity.
 		activity.setup();
+		// Set current language to Sugarizer
+	var defaultLanguage = (typeof chrome != 'undefined' && chrome.app && chrome.app.runtime) ? chrome.i18n.getUILanguage() : navigator.language;
+	var language = environment.user ? environment.user.language : defaultLanguage;
+	webL10n.language.code = language;
+
 		var enterButton = document.getElementById("enter");
 		var input = document.getElementById("userInput");
 		var ul = document.querySelector("ul");
@@ -56,15 +61,22 @@ define(["sugar-web/activity/activity"], function (activity) {
 		}
 
 		function addListAfterKeypress(event) {
-			if (inputLength() > 0 && event.which ===13) { 
+			if (inputLength() > 0 && event.which ===13) {
 				createListElement();
 			}
 		}
 
 
+
+
 		enterButton.addEventListener("click",addListAfterClick);
 
 		input.addEventListener("keypress", addListAfterKeypress);
+
+		// Process localize event
+window.addEventListener("localized", function() {
+	document.getElementById("first") = webL10n.get("WORK TO-DO");
+});
 	});
 
 });

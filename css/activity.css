@@ -17,6 +17,12 @@ p {
 	font-weight: 600;
 }
 
+#heading {
+  color: #ffffff;
+	margin-top: 10px;
+  text-align: center;
+}
+
 #first {
 	margin-top: 10px;
 	color: #025F70;
@@ -63,7 +69,7 @@ li > button {
 
 input {
 	border-radius: 5px;
-	min-width: 97%;
+	min-width: 95%;
 	padding: 10px;
   text-align: center;
 	border: none;

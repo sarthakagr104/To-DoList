@@ -5,6 +5,8 @@
 <meta charset="utf-8" />
 <title>To-do List</title>
 <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, viewport-fit=cover"/>
+<!-- Add locale.ini file -->
+<link rel="prefetch" type="application/l10n" href="locale.ini">
 <link rel="stylesheet" media="not screen and (device-width: 1200px) and (device-height: 900px)"
 	href="lib/sugar-web/graphics/css/sugar-96dpi.css">
 <link rel="stylesheet" media="screen and (device-width: 1200px) and (device-height: 900px)"
@@ -30,7 +32,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="intro col-12">
-					<h1>Work To-Dos</h1>
+					<h1></h1>
 					<div>
 						<div class="border1"></div>
 						<div c
@@ -40,6 +42,7 @@
 
 			<div class="row">
 				<div class="helpText col-12">
+					<p id="heading">WORK TO-DO</p>
 					<p id="first">Enter text into the input field to add items to your list.</p>
 					<p id="second">Click Enter button to add items to your list.</p>
 					<p id="third">Click the "X" to remove the item from your list.</p>
@@ -49,7 +52,8 @@
 			<div class="row">
 				<div class="col-12">
 					<input id="userInput" type="text" placeholder="New item..." maxlength="210">
-					<button id="enter"><i class="fas fa-pencil-alt"></i></button>
+					<button id="enter" type="button">-></button>
+
 				</div>
 			</div>
 
