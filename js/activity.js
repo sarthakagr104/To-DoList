@@ -1,4 +1,4 @@
-define(["sugar-web/activity/activity", "sugar-web/env", "sugar-web/graphics/icon", "webL10n"], function (activity, env, icon, webL10n) {
+define(["sugar-web/activity/activity", "sugar-web/environment", "sugar-web/graphics/icon", "webL10n"], function (activity, environment, icon, webL10n) {
 
 	// Manipulate the DOM only when it is ready.
 	requirejs(['domReady!'], function (doc) {
@@ -75,7 +75,12 @@ define(["sugar-web/activity/activity", "sugar-web/env", "sugar-web/graphics/icon
 
 		// Process localize event
 window.addEventListener("localized", function() {
-	document.getElementById("first") = webL10n.get("WORK TO-DO");
+	document.getElementById("heading").innerHTML = "<h1>"+webL10n.get("WORK TO-DO")+"</h1>";
+	document.getElementById("first").innerHTML = "<h1>"+webL10n.get("Enter text into the input field to add items to your list.")+"</h1>";
+	document.getElementById("second").innerHTML = "<h1>"+webL10n.get("Click Enter button to add items to your list.")+"</h1>";
+	document.getElementById("third").innerHTML = "<h1>"+webL10n.get("Click the 'X' to remove the item from your list.")+"</h1>";
+
+
 });
 	});
 
