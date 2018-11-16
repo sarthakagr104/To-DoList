@@ -1,4 +1,4 @@
-define(["sugar-web/activity/activity", "sugar-web/environment", "sugar-web/graphics/icon", "webL10n"], function (activity, environment, icon, webL10n) {
+define(["sugar-web/activity/activity", "sugar-web/env", "sugar-web/graphics/icon", "webL10n"], function (activity, environment, icon, webL10n) {
 
 	// Manipulate the DOM only when it is ready.
 	requirejs(['domReady!'], function (doc) {
