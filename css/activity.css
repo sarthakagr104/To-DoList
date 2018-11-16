@@ -68,9 +68,7 @@ li > button {
 }
 
 input {
-	border-radius: 5px;
-	min-width: 95%;
-	padding: 10px;
+	min-width: 94%;
   text-align: center;
 	border: none;
 }
